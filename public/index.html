@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Inicia session </h1>
+    <button id="loginGoogle">
+        inicia con Google
+    </button>
+    <button id="loginFacebook">
+        inicia con facebook
+    </button>
+    <button id="loginTwitter">
+        inicia con Twitter
+    </button>
+    <div id="root">
+        <img id=avatar src="" alt="">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAkhNDbpLEZJKbc9yDM1J6rtgUXof02yvM",
+            authDomain: "taller-06.firebaseapp.com",
+            databaseURL: "https://taller-06.firebaseio.com",
+            projectId: "taller-06",
+            storageBucket: "taller-06.appspot.com",
+            messagingSenderId: "668433077046",
+            appId: "1:668433077046:web:5bb688297f684b1b295997"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
